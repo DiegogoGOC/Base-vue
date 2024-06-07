@@ -1,14 +1,31 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import debut from './components/debut.vue'
+import fin from './components/fin.vue'
+import accueil from './views/accueil.vue'
+import qui from './views/qui.vue'
+/*import contact from './views/contact.vue'
+import projet from './views/projet.vue'*/
 </script>
 
 <template>
-  <header>
+  <debut></debut>
+  <br/>
+  <qui></qui>
+  <!--<accueil></accueil> oki-->
+  <!--<qui></qui> bof -->
+  <!--<contact></contact> <non-->
+  <!--<projet></projet>-->
+  <br/>
+  <fin></fin>
+  <!--<header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      
+
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -17,11 +34,11 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <RouterView />-->
 </template>
 
 <style scoped>
-header {
+/*header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -81,5 +98,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+}*/
 </style>
