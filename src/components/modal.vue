@@ -1,82 +1,48 @@
 <template>
-    <div>
-        <div class="modal-container">
-        
-             <div class="overlay modal-trigger"></div>
-                        
-            <div class="modal">
-                <button class="close-modal modal-trigger">X</button>
-                    <h1>google map bis </h1>
-                    <p>LanguAge: scala <br/>(travaille de groupe)</p>
-                </div>
-        </div>
-                        
-        <button class="modal-btn modal-trigger">Open</button>
+  <div v-show="show" class="overlay">
+
+
+    <div class="dialog">
+
+      <div class="dialog__content">
+        <h2 class="dialog__title" v-text="title"></h2>
+        <p class="dialog__description" v-text="description"></p>
+        <p>realiser le : </p>
+        <time datetime="2024-04-22T22:06+14:00" v-text="date"></time>
+        <br>
+        <a :href="lien" target="_blank"><img src="../img/github.png"  alt="lien github"></a>
+      </div>
+
+      <hr/>
+
+      <div class="dialog__footer">
+        <button @click="confirm" class="dialog__confirm">X</button>
+      </div>
+
     </div>
+
+  </div>
 </template>
 
-<style>
-
-
-.modal-btn{
-    padding: 10px 14px;
-    font-size: 18px;
-    margin: 10px auto;
-    display: block;
-    min-width: 150px;
-    cursor: pointer;
-  }
-  
-  .modal-container {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    color:black;
-  }
-  
-  .modal-container.active {
-    visibility: visible;
-    
-  }
-
-  .modal {
-    width: 95%;
-    max-width: 500px;
-    min-width: 300px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 5px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-  }
-  
-  .close-modal {
-    padding: 8px 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    background: #ff365e ;
-    color: #fff;
-  }
-</style>
-
 <script>
-const modalContainer = document.querySelector(".modal-container");
-const modalTriggers = document.querySelectorAll(".modal-trigger");
-
-modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
-
-
-function toggleModal(){
-    modalContainer.classList.toggle("active")
+  /*const lien2= "https://github.com/DiegogoGOC/"+ props.title;*/
+export default {
+    props: ['show', 'title', 'description',   "date",  'lien','lienmaj', 'cancel', 'confirm'],
+    methods: {
+    lien2() {
+      return lien = "https://github.com/DiegogoGOC/"+ props.lien;
+    }
+  }
+    
 }
 </script>
+<style>
+font {
+  color: black;
+}
+img {
+  width: 10%;
+  height:auto;
+  
+}
+</style>

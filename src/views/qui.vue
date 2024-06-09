@@ -18,6 +18,7 @@
 #portpholioQui{
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
 }
 #portpholioQui img{
     width: 100px;
