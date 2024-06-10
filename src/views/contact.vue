@@ -20,16 +20,16 @@
             <div>
                 <div>
                     <label for="nom">Nom :</label>
-                    <input type="text" name="nom" id="nom" placeholder="" v-model="nommodel"> <!--v-model="nommodel"-->
+                    <input type="text" name="nom" id="nom" placeholder="" v-model="nommodel">
                 </div>
                 <div>
                     <label for="prenom">Prenom :</label>
-                    <input type="text"  name="prenom" id="prenom" placeholder="" v-model="prenommodel"> <!--v-model="prenommodel"-->
+                    <input type="text"  name="prenom" id="prenom" placeholder="" v-model="prenommodel">
                 </div>
 
                 <div>
                     <label for="emailR">Repondre a l'adresse mail :</label>
-                    <input type="text"  name="email" id="emailR" placeholder="" v-model="emailRmodel"><!--v-model="emailRmodel"-->
+                    <input type="text"  name="email" id="emailR" placeholder="" v-model="emailRmodel">
                 </div>
                 
 
@@ -37,7 +37,7 @@
             <div id="com">
                 <label for="mail">Contenue du mail :</label>
                 <br>
-                <textarea id="txtCom" type="text" size="50" style="height:25px;" placeholder="" v-model="messagemodel" ></textarea><!--v-model="messagemodel"-->
+                <textarea id="txtCom" type="text" size="50" style="height:25px;" placeholder="" v-model="messagemodel" ></textarea>
                 
             </div>
             
@@ -101,6 +101,10 @@ export default {
     confirmok() {
       console.log('confirmok');
       this.ok = false;
+      this.nommodel="";
+      this.prenommodel="";
+      this.emailRmodel="";
+      this.messagemodel="";
     },
   }
 }
