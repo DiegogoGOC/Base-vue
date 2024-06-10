@@ -101,7 +101,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 #portpholio2{
     display: flex;
     justify-content: space-around;

@@ -28,15 +28,11 @@
   /*const lien2= "https://github.com/DiegogoGOC/"+ props.title;*/
 export default {
     props: ['show', 'title', 'description',   "date",  'lien','lienmaj', 'cancel', 'confirm'],
-    methods: {
-    lien2() {
-      return lien = "https://github.com/DiegogoGOC/"+ props.lien;
-    }
-  }
+    
     
 }
 </script>
-<style>
+<style scoped>
 font {
   color: black;
 }
