@@ -4,6 +4,7 @@ import AccueilView from '../views/accueil.vue'
 import ContactView from '../views/contact.vue'  
 import QuiView from '../views/qui.vue'  
 import ProjetView from '../views/projet.vue'  
+import Pb404View from '../views/pb404.vue'  
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,12 @@ const router = createRouter({
       name: 'projet',
       component: ProjetView
     },
+    {
+      path: '/pb404',
+      name: 'pb404',
+      component: Pb404View
+    }
+
   ]
 })
 
