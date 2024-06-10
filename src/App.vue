@@ -13,7 +13,7 @@ import pb404 from './views/pb404.vue'
 <template>
   <debut></debut>
   <br/>
-  <accueil></accueil>
+  <!--<accueil></accueil>
   <br/>
   <qui></qui>
   <br/>
@@ -21,7 +21,8 @@ import pb404 from './views/pb404.vue'
   <br/>
   <contact></contact>
   <br/>
-  <pb404></pb404>
+  <pb404></pb404>-->
+  <router-view></router-view>
   <br/>
   <fin></fin>
 

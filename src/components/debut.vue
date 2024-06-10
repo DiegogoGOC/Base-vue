@@ -3,18 +3,19 @@
         <a id="remonte" href="#"><img src="../img/rmt.png" alt=""></a>
         <img id="band" src="../img/bandrole.png" alt="">
         <nav>
-        <a href="./index.html"  title="Acceuille">
-            <img src="../img/qui2.png" alt="">
-        </a>
-            <a href="./qui.html"  title="QUI suis-je ?">
+            <router-link to="/"  title="Accueil">
                 <img src="../img/qui2.png" alt="">
-            </a>
-            <a href="./projet.html"  title="projet">
+            </router-link>
+            <router-link to="/qui"  title="QUI suis-je ?">
+                <img src="../img/qui2.png" alt="">
+            </router-link>
+            <router-link to="/projet"  title="projet">
                 <img src="../img/projet2.png" alt="">
-            </a>
-            <a href="./phone.html" title="contact">
-            <img src="../img/appel-telephonique.png" alt="">
-        </a>
+            </router-link>
+            <!-- exemple d'ajout du lien vers la page contact dans la navbar -->
+            <router-link to="/contact" title="contact">
+                <img src="../img/appel-telephonique.png" alt="">
+            </router-link>
         </nav>
     <hr/>
   </header>
