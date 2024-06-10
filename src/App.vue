@@ -7,6 +7,7 @@ import accueil from './views/accueil.vue'
 import qui from './views/qui.vue'
 import contact from './views/contact.vue'
 import projet from './views/projet.vue'
+import pb404 from './views/pb404.vue'
 </script>
 
 <template>
@@ -18,9 +19,9 @@ import projet from './views/projet.vue'
   <br/>
   <projet></projet>
   <br/>
-  <br/>
-  <br/>
   <contact></contact>
+  <br/>
+  <pb404></pb404>
   <br/>
   <fin></fin>
 
