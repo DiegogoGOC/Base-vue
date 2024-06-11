@@ -32,11 +32,13 @@ const router = createRouter({
       name: 'projet',
       component: ProjetView
     },
-    {
-      path: '/pb404',
-      name: 'pb404',
-      component: Pb404View
-    }
+    { path: '/:pathMatch(.*)*',
+
+      name: 'pb404', 
+      
+      component: Pb404View 
+      
+      }
 
   ]
 })
