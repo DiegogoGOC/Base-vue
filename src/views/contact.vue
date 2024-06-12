@@ -23,7 +23,7 @@
                     <input type="text" name="nom" id="nom" placeholder="" v-model="nommodel">
                 </div>
                 <div>
-                    <label for="prenom">Prenom :</label>
+                    <label for="prenom">Objet :</label>
                     <input type="text"  name="prenom" id="prenom" placeholder="" v-model="prenommodel">
                 </div>
 
